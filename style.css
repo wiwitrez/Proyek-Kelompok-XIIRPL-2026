@@ -104,11 +104,14 @@ td{
 }
 
 td strong{
-    color:#021526;
     display:block;
-    margin-bottom:2px; /* sebelumnya 8px */
+    color:#021526;
+    margin-bottom:4px;
     font-size:17px;
-    font-weight:700;
+}
+
+.anggota{
+    line-height:1.6;
 }
 
 tbody tr{
