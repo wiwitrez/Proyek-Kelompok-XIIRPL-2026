@@ -12,8 +12,6 @@ body{
 
 /* ================= HEADER ================= */
 
-/* ================= HEADER ================= */
-
 header{
     background:linear-gradient(135deg,#021526,#03346E);
     height:260px;
@@ -44,8 +42,8 @@ header{
 }
 
 .logo{
-    width:55px;
-    height:55px;
+    width:25px;
+    height:25px;
     object-fit:contain;
 }
 
