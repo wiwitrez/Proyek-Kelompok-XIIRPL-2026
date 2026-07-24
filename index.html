@@ -194,5 +194,24 @@
     Pemrograman Teks Grafis dan Multimedia
 </footer>
 
+    <script>
+const search = document.getElementById("search");
+const rows = document.querySelectorAll("tbody tr");
+
+search.addEventListener("keyup", function () {
+    const keyword = this.value.toLowerCase();
+
+    rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+
+        if (text.includes(keyword)) {
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+        }
+    });
+});
+</script>
+
 </body>
 </html>
