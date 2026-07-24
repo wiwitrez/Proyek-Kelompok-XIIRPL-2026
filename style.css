@@ -106,8 +106,9 @@ td{
 td strong{
     color:#021526;
     display:block;
-    margin-bottom:8px;
+    margin-bottom:2px; /* sebelumnya 8px */
     font-size:17px;
+    font-weight:700;
 }
 
 tbody tr{
