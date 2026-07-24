@@ -12,9 +12,11 @@ body{
 
 /* ================= HEADER ================= */
 
+/* ================= HEADER ================= */
+
 header{
     background:linear-gradient(135deg,#021526,#03346E);
-    height:230px;
+    height:260px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -24,7 +26,28 @@ header{
 }
 
 .overlay{
+    width:100%;
     animation:fade 1s;
+}
+
+/* Tambahan */
+
+.title-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+}
+
+.header-text{
+    text-align:center;
+}
+
+.logo{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    filter:drop-shadow(0 4px 10px rgba(0,0,0,.3));
 }
 
 header h1{
@@ -35,13 +58,12 @@ header h1{
 
 header p{
     font-size:22px;
-    margin-bottom:8px;
+    margin-bottom:6px;
 }
 
 header h3{
-    font-size:18px;
+    font-size:20px;
     font-weight:400;
-    opacity:.9;
 }
 
 /* ================= CONTAINER ================= */
@@ -147,7 +169,6 @@ tbody tr:hover{
     transition:.3s;
     box-shadow:0 5px 12px rgba(0,0,0,.2);
 }
-
 .btn:hover{
     background:linear-gradient(135deg,#03346E,#0B5ED7);
     transform:translateY(-2px);
@@ -167,55 +188,40 @@ footer{
 /* ================= ANIMATION ================= */
 
 @keyframes fade{
-
     from{
         opacity:0;
         transform:translateY(-20px);
     }
-
     to{
         opacity:1;
         transform:translateY(0);
     }
-
 }
 
 /* ================= RESPONSIVE ================= */
 
 @media(max-width:768px){
-
-    header{
-        height:200px;
+    .title-header{
+        flex-direction:column;
+        gap:15px;
     }
-
+    .logo{
+        width:60px;
+        height:60px;
+    }
     header h1{
-        font-size:28px;
+        font-size:30px;
     }
-
     header p{
         font-size:18px;
     }
-
     header h3{
         font-size:16px;
     }
-
-    .container{
-        width:95%;
-    }
-
     table{
         font-size:13px;
     }
-
-    th,
-    td{
+    th,td{
         padding:10px;
     }
-
-    .btn{
-        padding:8px 14px;
-        font-size:13px;
-    }
-
 }
